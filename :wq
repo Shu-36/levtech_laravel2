@@ -1,0 +1,15 @@
+<?php
+class tax{ 
+	public $taxinmoney  =  1.08;
+      
+ public function result($money){
+   echo $money *  $this->taxinmoney . '円です。'.  PHP_EOL;
+ }
+  class tax2 extends tax {
+   public $taxinmoney = 3.3;
+ }
+}
+
+
+$tax2 = new tax2();
+$tax->result(100);
